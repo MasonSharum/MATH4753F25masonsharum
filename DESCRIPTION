@@ -15,3 +15,4 @@ Encoding: UTF-8
 LazyData: true
 URL: https://github.com/MasonSharum/MATH4753F25masonsharum
 BugReports: https://github.com/MasonSharum/MATH4753F25masonsharum/issues
+RoxygenNote: 7.3.2
