@@ -1,6 +1,6 @@
 #' A summary function
 #'
-#' @param x
+#' @param x a qualitative variable
 #'
 #' @returns summary of x
 #' @export

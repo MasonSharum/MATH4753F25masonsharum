@@ -7,7 +7,7 @@
 mySum(x)
 }
 \arguments{
-\item{x}{}
+\item{x}{a qualitative variable}
 }
 \value{
 summary of x
