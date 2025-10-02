@@ -1,12 +1,12 @@
 #' Birthday function
 #'
-#' @param x
+#' @param x The number of people in the group
 #'
-#' @returns The chance there is a shared birthday among x people
+#' @returns A probability scalar
 #' @export
 #'
 #' @examples
-#' birthday(20:25)
+#' birthday(x = 20:25)
 birthday <- function(x){
   1 - exp(lchoose(365,x) + lfactorial(x) - x*log(365))
 }

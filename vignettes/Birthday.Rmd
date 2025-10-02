@@ -18,11 +18,66 @@ knitr::opts_chunk$set(
 library(MATH4753F25masonsharum)
 ```
 
-\[
+# Mathematical Derivation of the Birthday Probability
 
+\[
+  P(A) = 1 - P(A^{C})
 \]
+
+\[
+   = 1 - exp(log(P(A^C)))
+\]
+
+Next,
+
+\[
+  P(A^C) = {}^{365}P_n / 365^n
+\]
+
+\[
+  log(P(A^C)) = log^{365P}n - nlog(365)
+\]
+
+\[
+  = log(n!) + log(choose(365, n) - nlog(365))
+\]
+
+Next,
+
+\[
+  P(A) = 1 - exp(log(P(A^C)))
+\]
+
+\[
+  = 1 - exp(log(n!) + log(choose(365, n) - nlog(365)))
+\]
+
+# Formulation with lchoose() and lfactorial()
+
+\[
+ log(P(A^C)) = log(n!) + log(choose(365, n) - nlog(365))
+\]
+
+\[
+  = lfactorial(n) + lchoose(365,n) - nlog(365)
+\]
+
+\[
+  P(A) = 1 - P(A^C) = 1 - exp(log(P(A^C)))
+\]
+
+\[
+  = 1 - exp(lchoose(365,n) + lfactorial(n) - n*log(365))
+\]
+
+# Body of the function
+
+```{r}
+body(birthday)
+```
+
+# Calling the function
 
 ```{r}
 birthday(20:25)
-body(birthday)
 ```
