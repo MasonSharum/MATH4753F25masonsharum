@@ -2,8 +2,10 @@
 
 export(birthday)
 export(mySum)
+export(mybin)
 export(myfirstfunction)
 export(scatterhist)
+importFrom(grDevices,rainbow)
 importFrom(graphics,barplot)
 importFrom(graphics,hist)
 importFrom(graphics,layout)
