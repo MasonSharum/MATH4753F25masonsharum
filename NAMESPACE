@@ -6,11 +6,8 @@ export(mybin)
 export(myboot2)
 export(mycltu)
 export(myfirstfunction)
-<<<<<<< HEAD
 export(myncurve)
-=======
 export(ntickets)
->>>>>>> 6bd0ffbf4096e09a58df8dd2006fc8ac2dc07d8e
 export(scatterhist)
 importFrom(grDevices,rainbow)
 importFrom(graphics,abline)
@@ -21,12 +18,7 @@ importFrom(graphics,layout)
 importFrom(graphics,lines)
 importFrom(graphics,mtext)
 importFrom(graphics,par)
-<<<<<<< HEAD
 importFrom(graphics,polygon)
-importFrom(graphics,text)
-importFrom(stats,dnorm)
-importFrom(stats,pnorm)
-=======
 importFrom(graphics,segments)
 importFrom(graphics,text)
 importFrom(stats,density)
@@ -37,4 +29,3 @@ importFrom(stats,pnorm)
 importFrom(stats,quantile)
 importFrom(stats,runif)
 importFrom(stats,uniroot)
->>>>>>> 6bd0ffbf4096e09a58df8dd2006fc8ac2dc07d8e

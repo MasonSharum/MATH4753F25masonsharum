@@ -1,0 +1,43 @@
+---
+title: "Explaination"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Explaination}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(MATH4753F25masonsharum)
+```
+
+This is a package created for the class MATH 4753. It contains various functions and data sets that were created and used in various class assignments. This vignette shows four of these functions being used.
+
+
+```{r}
+myncurve(mu = 10, sigma = 2, a = 12)
+
+ntickets(N = 400, gamma = 0.02, p = 0.95)
+
+mycltu(n = 10, iter = 10000, a = 0, b = 10)
+
+scatterhist(x = 1:10, y = 11:20)
+```
+
+
+
+
+
+
+
+
+
+
+
